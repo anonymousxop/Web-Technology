@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+
+    <center>
+        <h2>Student Information Form</h2>
+
+        <form>
+            Full Name:
+            <input type="text" name="fname"><br><br>
+
+            Roll Number:
+            <input type="text" name="roll"><br><br>
+
+            Contact Number:
+            <input type="text" name="contact"><br><br>
+
+            Subjects:<br>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+            <input type="checkbox"> Web Development<br><br>
+
+            Semester:
+            <select>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+            </select><br><br>
+
+            Discipline:
+            <select>
+                <option>BSCS</option>
+                <option>BSIT</option>
+                <option>BSE</option>
+                <option>BSEE</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+
+</body>
+</html>
