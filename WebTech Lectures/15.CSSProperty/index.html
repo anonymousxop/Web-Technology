@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style for floated boxes */
+.box {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    text-align: center;
+    line-height: 50px;
+    background-color: #f0f0f0;
+}
+img:hover {
+    opacity: 0.5;
+}
+
+/* Clearfix class to stop floating */
+.clearfix {
+    clear: both;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Without clear</h2>
+<div class="box">Box 1</div>
+<p>This paragraph appears next to the floated box because we didn't clear it.</p>
+
+<h2>With clear</h2>
+<div class="box">Box 2</div>
+<div class="clearfix"></div> <!-- This clears the float -->
+<p>This paragraph appears below the floated box because we used clear.</p>
+<img src = "C:\Users\Lenovo\Desktop\image2.jpg" class="img1">
+
+<nav>
+    <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <li class="dropdown">
+            <a href="#">Department</a>
+            <ul class="submenu">
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Mathematics</a></li>
+                <li><a href="#">Physics</a></li>
+            </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

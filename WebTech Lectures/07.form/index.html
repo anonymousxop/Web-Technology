@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+    <h2>Student Information Form</h2>
+    
+    <form action="/submit-form" method="post">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required><br><br>
+        </fieldset>
+        <br>
+        
+        <!-- Subjects -->
+        <fieldset>
+            <legend>Subjects</legend>
+            
+            <input type="checkbox" id="math" name="subjects" value="Mathematics">
+            <label for="math">Mathematics</label><br>
+            
+            <input type="checkbox" id="physics" name="subjects" value="Physics">
+            <label for="physics">Physics</label><br>
+            
+            <input type="checkbox" id="cs" name="subjects" value="Computer Science">
+            <label for="cs">Computer Science</label><br>
+            
+            <input type="checkbox" id="chemistry" name="subjects" value="Chemistry">
+            <label for="chemistry">Chemistry</label><br>
+        </fieldset>
+        <br>
+        
+        <!-- Semester -->
+        <fieldset>
+            <legend>Semester</legend>
+            <label for="semester">Select Semester:</label><br>
+            <select id="semester" name="semester" required>
+                <option value="">--Select Semester--</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+                <option value="5">Semester 5</option>
+                <option value="6">Semester 6</option>
+            </select>
+        </fieldset>
+        <br>
+        
+        <!-- Discipline -->
+        <fieldset>
+            <legend>Discipline</legend>
+            <label for="discipline">Select Discipline:</label><br>
+            <select id="discipline" name="discipline" required>
+                <option value="">--Select Discipline--</option>
+                <option value="BSCS">BS Computer Science</option>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSE">BS Electronics</option>
+                <option value="BSEE">BS Electrical Engineering</option>
+            </select>
+        </fieldset>
+        <br>
+        
+        <!-- Submit -->
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>

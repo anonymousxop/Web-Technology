@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Image</title>
+</head>
+<body>
+    <img src="C:\Users\Lenovo\Desktop\images1.jpg" width="500px"
+   usemap="#mapimage" >
+   <map name="mapimage">
+    <area shape="default" href="https://www.wikipedia.org" alt="Default Area">
+    <!-- Rectangle area -->
+     <!--Rectangle coordinate x1,y1(top-left corner) x2,y2(bottom-rigt corner) -->
+     <area shape="rect" coords="0,0,200,500" 
+     href="https://www.google.com/"  
+     alt="Google" target="_blank">
+   </map>
+   <!-- Circle area -->
+     <!--Circle coordinate x,y(X coordinate of the circle center (pixels from left)
+     Y coordinate of the circle center (pixels from top)
+     Radius of the circle in pixels) -->
+     <map name="mapimage">
+    <area shape="circle" coords="250,150,50"
+          href="https://www.youtube.com"
+          alt="YouTube" target="_blank">
+     </map>  
+     <!-- Polnomial -->
+      <!--x1, y1(top-left) → first vertex of the polygon
+      x2, y2(top-right) → second vertex
+      x3, y3 →(bottom) third vertex-->
+     <map name="mapimage">
+    <!-- Polygon with 3 points (triangle) -->
+    <area shape="poly" coords="100,50,200,50,150,150" 
+          href="https://www.facebook.com" 
+          alt="Triangle">
+          <area shape="default" href="https://www.wikipedia.org" alt="Default Area">
+
+</map>   
+</body>
+</html>

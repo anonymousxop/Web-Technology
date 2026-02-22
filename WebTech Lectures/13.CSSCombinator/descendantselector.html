@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+		 div > p {
+            background-color: green;
+            color: white;
+            padding: 6px;
+        }
+
+        /* Descendant selector */
+        div p {
+            border: 2px solid red;
+            margin: 5px;
+        }
+	</style>
+</head>
+<body>
+     <h2>CSS Selector Example</h2>
+
+    <div>
+        <p>Paragraph 1: Direct child of div</p>
+
+        <section>
+            <p>Paragraph 2: Inside section (nested)</p>
+        </section>
+		<h1>
+			<p>thirdparagrpah</p>
+		</h1>
+		<div>
+			<p>inside a paragraph</p>
+		</div>
+    </div>
+
+    <p>Paragraph 3: Outside div</p>
+</body>
+</html>

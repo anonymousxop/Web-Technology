@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Main layout */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            width: 70%;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding-left: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Courses section */
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .course-box {
+            width: 30%;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <p>Using Div and FInal layout</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="content">
+        <h2>Welcome to My Website</h2>
+        <p>
+            Website designing task using div , NevBar. Designing Using Html and Css.
+        </p>
+
+        <img src="D:\CS\Softwares\VS code\Projects\WebTech\Pictures\Wallpaper" width="200">
+    </div>
+
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+        <p>This is the sidebar </p>
+        <ul>
+            <li><a href="#www.google.com">Click Here</a></li>
+            <li><a href="#">Click Here</a></li>
+            <li><a href="#">Click Here</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="courses">
+    <div class="course-box">
+        <h3>Course 1</h3>
+        <p>Introduction to Web Design</p>
+    </div>
+
+    <div class="course-box">
+        <h3>Course 2</h3>
+        <p>HTML & CSS Fundamentals</p>
+    </div>
+
+    <div class="course-box">
+        <h3>Course 3</h3>
+        <p>JavaScript Basics</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>

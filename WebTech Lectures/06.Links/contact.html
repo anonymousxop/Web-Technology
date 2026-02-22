@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Map Tag Example</title>
+</head>
+<body>
+
+    <h1>HTML Image Map Example</h1>
+
+    <p>Click on the areas of the image:</p>
+
+    <img src="world-map.jpg" alt="World Map" usemap="#worldmap" width="600">
+
+    <!-- Define the map -->
+    <map name="worldmap">
+        <!-- Coordinates are x,y,width,height for rectangle -->
+        <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/Asia" alt="Asia">
+        <area shape="circle" coords="300,200,50" href="https://en.wikipedia.org/wiki/Europe" alt="Europe">
+        <area shape="poly" coords="400,300,450,350,500,300,480,250" href="https://en.wikipedia.org/wiki/Africa" alt="Africa">
+    </map>
+
+</body>
+</html>
