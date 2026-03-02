@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Picture</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-
+        * {
+            box-sizing: border-box;
         }
 
-        .main-container{
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Main Outer Border */
+        .main-container {
             width: 80%;
             margin: 40px auto;
-            padding: 20%;
-            background-color: white;
-            border-radius: 15px;
-            border : 3px solid black;
-            
-
-        }
-
-        h1{
-            text-align: center;
-
-        }
-
-        .card-container{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .card{
-            width: 40%;
-            padding: 15%;
-            border-radius: 12px;
-            box-shadow : 0;
-            text-align: center;
+            padding: 20px;
             border: 3px solid black;
-
+            border-radius: 20px;
+            background-color: white;
         }
 
-        .card img{
-            width : 80;
+        h1 {
+            text-align: center;
+        }
+
+        /* NEW BORDER that holds both cards */
+        .cards-wrapper {
+            border: 3px solid black;   /* New Border */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        /* Cards container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;   /* Space between My Pet & Fav Pet */
+        }
+
+        /* Each Card */
+        .card {
+            width: 40%;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
             border-radius: 10px;
             margin-top: 10px;
-            border: 2px solid black;
         }
-
-
     </style>
 </head>
+
 <body>
-    
-    <div class="main-container">
-        <h1> Animal Picture></h1>
+
+<div class="main-container">
+    <h1>Animal Picture</h1>
+
+    <!-- NEW BORDER WRAPPER -->
+    <div class="cards-wrapper">
 
         <div class="card-container">
-            <div class="card";
-            <h2>My Pet</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZl1B-iS1VDit60FPpERihwXW2prvm_JKDAg&s" alt="pet picture">
+            
+            <div class="card">
+                <h2>My Pet</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZl1B-iS1VDit60FPpERihwXW2prvm_JKDAg&s" alt="Pet Picture">
+            </div>
+
+            <div class="card">
+                <h2>My Favorite Pet</h2>
+                <img src="https://phoneky.co.uk/thumbs/wallpapers/p2ls/animals/49/f00137f012892408.jpg" alt="Favorite Pet">
+            </div>
 
         </div>
-
-        <div class="card";
-            <h2>My Favorite Animal</h2>
-            <img src="" alt="pet picture">
-        </div>
-    '</div>
 
     </div>
-    
+
+</div>
+
 </body>
 </html>

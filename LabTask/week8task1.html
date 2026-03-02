@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <title>Student Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>Sr. No</th>
+        <th>Student Name</th>
+        <th>Phone No.</th>
+        <th colspan="2">Course Enrolled</th>
+    </tr>
+
+    <!-- Row 1 -->
+    <tr>
+        <td rowspan="2">1</td>
+        <td rowspan="2">Muhammad Ali</td>
+        <td>0335-1234567</td>
+        <td rowspan="2">Web Tech.</td>
+        <td rowspan="2">Web Engg.</td>
+    </tr>
+    <tr>
+        <td>0335-1234567</td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr>
+        <td rowspan="2">2</td>
+        <td rowspan="2">Muhammad Ahmed</td>
+        <td>0335-1234567</td>
+        <td colspan="2" rowspan="2">Data Structures & Algo.</td>
+    </tr>
+    <tr>
+        <td>0335-1234567</td>
+    </tr>
+
+    <!-- Row 3 -->
+    <tr>
+        <td rowspan="2">3</td>
+        <td rowspan="2">Muhammad Bilal</td>
+        <td>0335-1234567</td>
+        <td rowspan="2">Artificial Intelligence</td>
+        <td rowspan="2">Discrete Math.</td>
+    </tr>
+    <tr>
+        <td>0335-1234567</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
